@@ -9,21 +9,22 @@
 #import "CardGameViewController.h"
 
 @interface CardGameViewController ()
+@property (weak, nonatomic) IBOutlet UILabel *flipLabel;
 
 @end
 
 @implementation CardGameViewController
 
-- (void)viewDidLoad
+- (IBAction)touchCardButton:(UIButton *)sender
 {
-    [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
-}
-
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    
+    if ([sender.currentTitle length]) {
+        [sender setBackgroundImage:[UIImage imageNamed:@"cardback"] forState:UIControlStateNormal];
+        [sender setTitle:@"" forState:UIControlStateNormal];
+    }else {
+            [sender setBackgroundImage:[UIImage imageNamed:@"cardfront"] forState:UIControlStateNormal];
+            [sender setTitle:@"A ♣︎" forState:UIControlStateNormal];
+    }
 }
 
 @end
