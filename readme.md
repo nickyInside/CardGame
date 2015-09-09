@@ -1,7 +1,7 @@
 Cards
 =======
 
-This is a sample Card Game of the Standford University's online iPhone Application course . The project is driven by requirements defined in course assignments. One of the key feature of my version is that it's driven by tests from the beginning rather than simply writing code.
+This is a Card Game for Standford University's online iPhone Application course.
 
 Main Features:
 - fully test-driven model logic: each time something is being implemented the tests are written first
@@ -9,7 +9,6 @@ Main Features:
 - the match logic is universal for n-number of cards (2,3-card game is just an example) and still simple using simple formula 
 
 Some of the features of this implementation:
-
 - Full Set Card Game logic
 - The set card and last flip result displayed using attributes of the NSAttributedString
 - In a set game cards disappear when set picked to reduce distraction
