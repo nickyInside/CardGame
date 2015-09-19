@@ -7,7 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "CardMatchingGame.h"
+#import "Card.h"
+#import "GameResult.h"
 
 @interface CardGameViewController : UIViewController
+
+- (CardMatchingGame*) createNewGame;
+- (void)updateCardButton:(UIButton *)cardButton forCard:(Card *)card;
+- (GameResult*) createGameResult;
 
 @end
